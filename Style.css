@@ -1,0 +1,131 @@
+/* General Card Container Styling */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f4f4;
+}
+
+/* Card Styling */
+.card {
+    background: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+}
+
+/* Smaller Card Number Circle - Placed in Top Left */
+.card-number.card-circle {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    background: red;
+    padding: 5px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+}
+
+/* Author Section */
+.card-author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+/* Author Image */
+.card-author img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    object-fit: cover;
+}
+
+/* Author Name */
+.card-author .author-name {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Order Now Button */
+.card-tag {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: #ff5722;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.card-tag:hover {
+    background: #e64a19;
+    transform: scale(1.05);
+}
+
+/* -------------------- */
+/* NAVBAR BUTTON GROUP */
+/* -------------------- */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Button Group */
+.btn-group {
+    display: flex;
+    gap: 15px;
+}
+
+/* Buttons */
+.btn-group__item {
+    background: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.btn-group__item:hover {
+    background: #e64a19;
+    transform: scale(1.05);
+}
+
+/* Active/Selected State */
+.btn-group__item.active {
+    background: #d84315;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
